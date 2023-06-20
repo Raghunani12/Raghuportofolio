@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghu Nani</title>
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
+    <!-- Animate Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	
+	
+    <style>
+ body {
+            font-family: 'Roboto', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .typewriter {
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid orange;
+            /* The typewriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            letter-spacing: .15em;
+            /* Adjust as needed */
+            animation-delay: 2s !important;
+            animation:
+                typing 3.5s steps(30, end) forwards,
+                blink-caret .5s step-end infinite;
+            width: min-content;
+            opacity: 0;
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%;
+                opacity: 1;
+            }
+
+            1% {
+                opacity: 1;
+            }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: orange
+            }
+        }
+
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #222;
+            z-index: 9999;
+        }
+
+        .dark-mode-toggle:hover {
+            color: orange;
+        }
+
+        body.dark-mode .navbar-nav .nav-item a {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body class="light-mode">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-0">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+                <!-- Left links -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item p-4"><b>
+                        <a class="text-purple-400" aria-current="page" href="index.html">Home</a></b>
+                    </li>
+                    <li class="nav-item p-4"><b>
+                        <a class="text-dark" href="about.html">About Me</a></b>
+                    </li>
+                    <li class="nav-item p-4"><b>
+                        <a class="text-dark" href="skills.html">Skills</a></b>
+                    </li>
+					<li class="nav-item p-4"><b>
+                        <a class="text-dark" href="services.html">Services</a></b>
+                    </li>
+					 <li class="nav-item dropdown p-4" id="learnDropdown">
+                        <b>
+                            <a class="text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Learn</a>
+                        </b>
+                        <!-- Sub-navigation items -->
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="programming.html">Programming</a></li>
+                            <li><a class="dropdown-item" href="books.html">Books</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item p-4"><b>
+                        <a class="text-dark" href="contact.html">Contact</a></b>
+                    </li>
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <div class="container h-75">
+        <!-- Content -->
+        <div class="section">
+            <div class="row">
+                <div class="col-xl-6">
+                    <!-- Left Section -->
+                    <div>
+                        <div style="padding-top: 2rem">
+                            <p class="fs-2 pt-lg-4 animate__animated animate__fadeInRight">
+                                Hi there 👋
+                            </p>
+                            <p class="fs-1 fw-bold animate__animated animate__fadeInRight">
+                                I am RAGHU  
+                            </p>
+                            <div style="width: max-content;">
+                                <div class="fs-4 fw-bold typewriter">
+                                    > <span>A Student...!</span><br>
+									 > <span>Undergraduate-CYBERSECURITY.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <!-- Right Section -->
+                    <img class="w-100 py-xl-5 text-right" src="./img/2.png" alt="Programmer Coding" />
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="dark-mode-toggle" id="dark-mode-toggle">
+        <i class="fas fa-adjust"></i>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var toggleIcon = document.getElementById('dark-mode-toggle');
+            var body = document.body;
+            toggleIcon.addEventListener('click', function () {
+                body.classList.toggle('dark-mode');
+                if (body.classList.contains('dark-mode')) {
+                    toggleIcon.classList.replace('fa-adjust', 'fa-sun');
+                } else {
+                    toggleIcon.classList.replace('fa-sun', 'fa-adjust');
+                }
+            });
+        });
+    </script>
+
+</body>
+<script>
+        const learnDropdown = document.getElementById('learnDropdown');
+        const subMenu = learnDropdown.querySelector('.dropdown-menu');
+
+        learnDropdown.addEventListener('mouseover', () => {
+            subMenu.classList.add('show');
+        });
+
+        learnDropdown.addEventListener('mouseout', () => {
+            subMenu.classList.remove('show');
+        });
+    </script>
+<footer>
+    <script type="text/javascript" src="https://freehitcounters.org/count/cncp"></script><br>
+    <a href='https://www.versicherungen.at/'>Versicherungsvergleich</a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=4bb8a87f73ee949e237c8fb95bea5a27a8075f21'></script>
+	
+
+</html>
